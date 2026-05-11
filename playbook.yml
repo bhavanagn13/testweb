@@ -10,8 +10,8 @@
 
     - name: Copy WAR file to Tomcat
       copy:
-        src: "{{ lookup('env','WORKSPACE') }}/target/webappmaven.war"
-        dest: "/opt/tomcat/webapps/webappmaven.war"
+        src: "{{ lookup('env','WORKSPACE') }}/target/mavenweb.war"
+        dest: "/opt/tomcat/webapps/mavenweb.war"
 
     - name: Start Tomcat
       shell: /opt/tomcat/bin/startup.sh
